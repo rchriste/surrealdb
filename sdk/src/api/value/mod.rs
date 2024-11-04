@@ -181,7 +181,7 @@ transparent_wrapper!(
 	///
 	/// Record id's consist of a table name and a key.
 	/// For example the record id `user:tkwse1j5o0anqjxonvzx` has the table `user` and the key `tkwse1j5o0anqjxonvzx`.
-	#[derive( Clone, Eq, PartialEq, PartialOrd)]
+	#[derive( Clone, Hash, Eq, PartialEq, PartialOrd)]
 	pub struct RecordId(CoreThing)
 );
 impl_serialize_wrapper!(RecordId);

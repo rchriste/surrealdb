@@ -239,7 +239,7 @@ pub enum Error {
 
 	/// Tried to convert an value which contained something like for example a query or future.
 	#[error("tried to convert from a value which contained non-primitive values to a value which only allows primitive values.")]
-	RecievedInvalidValue,
+	ReceivedInvalidValue,
 }
 
 impl serde::ser::Error for Error {

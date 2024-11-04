@@ -344,7 +344,7 @@ async fn router(
 				send_request(req, base_url, client, headers, auth).await?
 			else {
 				return Err(Error::InternalError(
-					"recieved invalid result from server".to_string(),
+					"received invalid result from server".to_string(),
 				)
 				.into());
 			};
@@ -408,7 +408,7 @@ async fn router(
 				send_request(req, base_url, client, headers, auth).await?
 			else {
 				return Err(Error::InternalError(
-					"recieved invalid result from server".to_string(),
+					"received invalid result from server".to_string(),
 				)
 				.into());
 			};

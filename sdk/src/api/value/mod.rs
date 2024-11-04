@@ -134,7 +134,7 @@ impl From<RecordIdKey> for Value {
 			CoreId::Object(x) => Value::from_inner(CoreValue::from(x)),
 			CoreId::Array(x) => Value::from_inner(CoreValue::from(x)),
 			CoreId::Uuid(x) => Value::from_inner(CoreValue::from(x)),
-			_ => panic!("lib recieved generate variant of record id"),
+			_ => panic!("lib received generate variant of record id"),
 		}
 	}
 }

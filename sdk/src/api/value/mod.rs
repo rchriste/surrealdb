@@ -82,7 +82,7 @@ transparent_wrapper!(
 
 transparent_wrapper!(
 	/// The key of a [`RecordId`].
-	#[derive( Clone, PartialEq, PartialOrd)]
+	#[derive( Clone, Eq, PartialEq, PartialOrd)]
 	#[non_exhaustive]
 	pub struct RecordIdKey(CoreId)
 );
@@ -181,7 +181,7 @@ transparent_wrapper!(
 	///
 	/// Record id's consist of a table name and a key.
 	/// For example the record id `user:tkwse1j5o0anqjxonvzx` has the table `user` and the key `tkwse1j5o0anqjxonvzx`.
-	#[derive( Clone, PartialEq, PartialOrd)]
+	#[derive( Clone, Eq, PartialEq, PartialOrd)]
 	pub struct RecordId(CoreThing)
 );
 impl_serialize_wrapper!(RecordId);
